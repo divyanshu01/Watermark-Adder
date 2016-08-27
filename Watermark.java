@@ -19,3 +19,12 @@ class Watermark {
 			g.drawString(str, x, y);
 			ImageIO.write(image, "jpg", destination);
 			g.dispose();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void main(String [] args) {
+		
+	}
+}
