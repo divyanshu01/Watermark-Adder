@@ -10,3 +10,8 @@ class Watermark {
 			BufferedImage image = image1;
 			Graphics2D g = (Graphics2D)image.getGraphics();
 			g.setFont(new Font("Serif", Font.BOLD | Font.ITALIC, 190));
+			g.setColor(Color.BLACK);
+			FontMetrics fm = g.getFontMetrics();
+			AlphaComposite composite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.2f);
+			g.setComposite(composite);
+			int x = (image.getWidth() - fm.stringWidth(str)) / 2;
