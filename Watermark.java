@@ -15,3 +15,7 @@ class Watermark {
 			AlphaComposite composite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.2f);
 			g.setComposite(composite);
 			int x = (image.getWidth() - fm.stringWidth(str)) / 2;
+			int y = (image.getHeight()) / 2 + 50;
+			g.drawString(str, x, y);
+			ImageIO.write(image, "jpg", destination);
+			g.dispose();
