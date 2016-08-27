@@ -25,6 +25,6 @@ class Watermark {
 		}
 	}
 	public static void main(String [] args) {
-		
+		Watermark wt = new Watermark();
 	}
 }
