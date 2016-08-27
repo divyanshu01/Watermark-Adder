@@ -26,5 +26,8 @@ class Watermark {
 	}
 	public static void main(String [] args) {
 		Watermark wt = new Watermark();
+		File source = new File("D:\\Lion's Den\\overloading_comic.jpg");
+		File destination = new File("D:\\Lion's Den\\overloading_comic1.jpg");
+		wt.addWatermark(source, destination);
 	}
 }
